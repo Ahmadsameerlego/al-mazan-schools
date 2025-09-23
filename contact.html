@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تواصل معنا - مدارس المزن</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+     <!-- NAVBAR -->
+    <header class="bg-[#1E657B] text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2 space-x-reverse">
+                <img src="/assets/logo.png" alt="شعار مدرسة المزن" class="h-[70px] w-[140px] object-cover" />
+            </a>
+            <nav class="hidden md:flex space-x-6 space-x-reverse text-lg font-medium">
+                <a href="index.html" class="hover:text-[#D39D2E]">الرئيسية</a>
+                <a href="about.html" class="hover:text-[#D39D2E]">عن المدرسة</a>
+                <a href="programs.html" class="hover:text-[#D39D2E]">الأقسام الأكاديمية</a>
+                <a href="admissions.html" class="hover:text-[#D39D2E]">القبول والتسجيل</a>
+                <a href="news.html" class="hover:text-[#D39D2E]">الأخبار</a>
+                <a href="contact.html" class="hover:text-[#D39D2E]">تواصل معنا</a>
+                <a href="careers.html" class="hover:text-[#D39D2E]">الوظائف</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-[#1E657B] text-white mt-4 space-y-2 p-4 rounded-xl">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن المدرسة</a>
+            <a href="programs.html">الأقسام الأكاديمية</a>
+            <a href="admissions.html">القبول والتسجيل</a>
+            <a href="news.html">الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+            <a href="careers.html">الوظائف</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative text-white py-20" style="background:  url('/assets/banner.jpeg'); background-size: cover; background-position: center;">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">تواصل معنا</h1>
+        <p class="text-lg max-w-2xl mx-auto">
+          نسعد بخدمتكم والإجابة عن جميع استفساراتكم.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-16">
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-xl font-semibold mb-2">📍 العنوان</h3>
+          <p>عمان، الأردن - شارع المزن</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-xl font-semibold mb-2">📞 الهاتف</h3>
+          <p>+962 6 1234567</p>
+          <p>+962 79 1234567 (واتساب)</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-xl font-semibold mb-2">✉️ البريد الإلكتروني</h3>
+          <p>info@almazenschool.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="bg-white rounded-2xl shadow-lg p-8 max-w-3xl mx-auto">
+          <h2 class="text-2xl font-bold mb-6 text-center text-[#1E657B]">أرسل رسالة</h2>
+          <form class="space-y-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input type="text" placeholder="الاسم الكامل" class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 outline-none" required />
+              <input type="email" placeholder="البريد الإلكتروني" class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 outline-none" required />
+            </div>
+            <input type="tel" placeholder="رقم الهاتف" class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 outline-none" />
+            <textarea placeholder="اكتب رسالتك هنا..." rows="5" class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-indigo-500 outline-none" required></textarea>
+            <button type="submit" class="w-full bg-[#1E657B] text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">إرسال</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-bold text-center mb-6 text-[#1E657B]">موقعنا على الخريطة</h2>
+        <div class="rounded-2xl overflow-hidden shadow-lg h-96">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!..."
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+  <!-- FOOTER -->
+    <footer class="bg-[#1E657B] text-white py-10 mt-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <!-- Logo and Intro -->
+            <div>
+                <a href="index.html" class="flex items-center space-x-2 space-x-reverse mb-4">
+                    <img src="/assets/logo.png" alt="شعار مدرسة المزن" class="h-[70px] w-[140px] object-cover" />
+                </a>
+                <p class="text-sm leading-relaxed">
+                    روضة ومدارس المزن التربوية - نُعدّ الأجيال لمستقبل أفضل بالقيم والمعرفة.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">روابط سريعة</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-[#D39D2E]">الرئيسية</a></li>
+                    <li><a href="about.html" class="hover:text-[#D39D2E]">عن المدرسة</a></li>
+                    <li><a href="programs.html" class="hover:text-[#D39D2E]">الأقسام الأكاديمية</a></li>
+                    <li><a href="admissions.html" class="hover:text-[#D39D2E]">القبول والتسجيل</a></li>
+                    <li><a href="news.html" class="hover:text-[#D39D2E]">الأخبار</a></li>
+                    <li><a href="careers.html" class="hover:text-[#D39D2E]">الوظائف</a></li>
+                    <li><a href="contact.html" class="hover:text-[#D39D2E]">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <!-- Academics -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">الأقسام الأكاديمية</h3>
+                <ul class="space-y-2">
+                    <li><a href="programs.html#kg" class="hover:text-[#D39D2E]">رياض الأطفال</a></li>
+                    <li><a href="programs.html#primary" class="hover:text-[#D39D2E]">المرحلة الابتدائية</a></li>
+                    <li><a href="programs.html#middle" class="hover:text-[#D39D2E]">المرحلة الإعدادية</a></li>
+                    <li><a href="programs.html#secondary" class="hover:text-[#D39D2E]">المرحلة الثانوية</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">تواصل معنا</h3>
+                <p>📍 عمان، الأردن</p>
+                <p>☎ +962 6 123 4567</p>
+                <p>✉ info@almozon.edu.jo</p>
+                <div class="flex space-x-4 space-x-reverse mt-4">
+                    <a href="#" class="hover:text-[#D39D2E]">فيسبوك</a>
+                    <a href="#" class="hover:text-[#D39D2E]">انستجرام</a>
+                    <a href="#" class="hover:text-[#D39D2E]">لينكدإن</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8 border-t border-white/20 pt-4">
+            © 2025 جميع الحقوق محفوظة - مدارس المزن التربوية
+        </div>
+    </footer>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      if(menuBtn){
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>

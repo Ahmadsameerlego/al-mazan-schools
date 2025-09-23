@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>مدارس المزن - Al-Mozon Educational Kindergarten & Schools</title>
+    <meta name="description" content="مدارس المزن - تعليم متميز، بيئة آمنة، برامج دولية ومحلية." />
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --brand: #1E657B;
+            /* teal from logo */
+            --accent: #D39D2E;
+            /* gold from logo */
+            --muted: #6B7E83;
+        }
+
+        /* small tweaks for RTL-friendly spacing */
+        .rtl\:container {
+            direction: rtl;
+        }
+
+        /* nice glassy button */
+        .btn-primary {
+            background: linear-gradient(90deg, var(--brand), color-mix(in srgb, var(--brand) 70%, #ffffff 30%));
+            color: white;
+        }
+
+        /* subtle card shadow */
+        .card {
+            box-shadow: 0 8px 24px rgba(16, 24, 32, .08);
+        }
+
+        /* responsive logo size control */
+        .logo-inline {
+            width: 72px;
+            height: 72px;
+        }
+
+        @media(min-width:768px) {
+            .logo-inline {
+                width: 96px;
+                height: 96px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+    <!-- NAVBAR -->
+    <header class="bg-[#1E657B] text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2 space-x-reverse">
+                <img src="/assets/logo.png" alt="شعار مدرسة المزن" class="h-[70px] w-[140px] object-cover" />
+            </a>
+            <nav class="hidden md:flex space-x-6 space-x-reverse text-lg font-medium">
+                <a href="index.html" class="hover:text-[#D39D2E]">الرئيسية</a>
+                <a href="about.html" class="hover:text-[#D39D2E]">عن المدرسة</a>
+                <a href="programs.html" class="hover:text-[#D39D2E]">الأقسام الأكاديمية</a>
+                <a href="admissions.html" class="hover:text-[#D39D2E]">القبول والتسجيل</a>
+                <a href="news.html" class="hover:text-[#D39D2E]">الأخبار</a>
+                <a href="contact.html" class="hover:text-[#D39D2E]">تواصل معنا</a>
+                <a href="careers.html" class="hover:text-[#D39D2E]">الوظائف</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-[#1E657B] text-white mt-4 space-y-2 p-4 rounded-xl">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن المدرسة</a>
+            <a href="programs.html">الأقسام الأكاديمية</a>
+            <a href="admissions.html">القبول والتسجيل</a>
+            <a href="news.html">الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+            <a href="careers.html">الوظائف</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="home">
+        <section class="py-12 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1 text-center md:text-right">
+                        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight" style="color:var(--brand)">مدارس
+                            المزن التربوية</h1>
+                        <p class="mt-4 text-gray-600 md:text-lg">بيئة تعليمية آمنة، برامج أكاديمية متميزة، وأنشطة تنمّي
+                            شخصية الطالب. انضم إلينا لبناء مستقبل مشرق.</p>
+
+                        <div class="mt-6 flex flex-col sm:flex-row sm:justify-center md:justify-end gap-3">
+                            <a href="#admissions"
+                                class="px-6 py-3 rounded-lg shadow card btn-primary inline-block text-center font-semibold">معلومات
+                                القبول</a>
+                            <a href="#programs"
+                                class="px-6 py-3 rounded-lg border inline-block text-center font-semibold">الأقسام
+                                والبرامج</a>
+                        </div>
+
+                        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm">
+                            <div class="p-3 border rounded-lg">
+                                <div class="text-xs text-gray-500">سنوات الخبرة</div>
+                                <div class="text-xl font-bold" style="color:var(--brand)">15+</div>
+                            </div>
+                            <div class="p-3 border rounded-lg">
+                                <div class="text-xs text-gray-500">نسبة النجاح</div>
+                                <div class="text-xl font-bold" style="color:var(--brand)">98%</div>
+                            </div>
+                            <div class="p-3 border rounded-lg">
+                                <div class="text-xs text-gray-500">المنهج</div>
+                                <div class="text-xl font-bold" style="color:var(--brand)">محلي + دولي</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-1 md:order-2 flex justify-center md:justify-start">
+                        <div class="w-full max-w-md">
+                            <img src="/assets/student.webp" alt="طلاب" class="w-full rounded-2xl object-cover card" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="py-10 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    <div class="md:col-span-2">
+                        <h2 class="text-2xl font-bold text-[color:var(--brand)]">عن المزن</h2>
+                        <p class="mt-3 text-gray-600">مدارس المزن تقدم برامجا تربوية متكاملة تهدف إلى تنمية قدرات الطلبة
+                            الأكاديمية والاجتماعية من خلال بيئة آمنة ومتطورة. لدينا كادر مؤهل ومناهج حديثة مع تركيز على
+                            التفكير النقدي والمهارات الحياتية.</p>
+
+                        <ul class="mt-4 space-y-2">
+                            <li class="flex items-start gap-3"><span class="mt-1 text-[color:var(--accent)]">•</span>
+                                منهج ثنائي اللغة ومواد داعمة</li>
+                            <li class="flex items-start gap-3"><span class="mt-1 text-[color:var(--accent)]">•</span>
+                                أنشطة إثرائية وفعاليات دورية</li>
+                            <li class="flex items-start gap-3"><span class="mt-1 text-[color:var(--accent)]">•</span>
+                                رعاية صحية داخل المدرسة وشبكة أمان للأسرة</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-center md:justify-end">
+                        <div class="w-48 h-48 rounded-2xl flex items-center justify-center bg-white card">
+                            <img src="/assets/logo.png" alt="logo" class="w-28 h-28 object-contain" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs -->
+        <section id="programs" class="py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-[color:var(--brand)]">الأقسام الأكاديمية</h3>
+                    <a href="#programs" class="text-sm text-gray-500">استعرض الكل →</a>
+                </div>
+
+                <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- card -->
+                    <article class="p-5 bg-white rounded-2xl card">
+                        <h4 class="font-semibold">الروضة ثنائية اللغة</h4>
+                        <p class="mt-2 text-sm text-gray-600">برنامج مرن يركز على اللعب التعلمي والمهارات الأساسية.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <a class="text-sm font-semibold" href="#">التفاصيل</a>
+                            <span class="text-[color:var(--brand)] font-bold">KG</span>
+                        </div>
+                    </article>
+
+                    <article class="p-5 bg-white rounded-2xl card">
+                        <h4 class="font-semibold">الصفوف الأولى</h4>
+                        <p class="mt-2 text-sm text-gray-600">تركيز على إرساء الأساس الأكاديمي والتربية السلوكية.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <a class="text-sm font-semibold" href="#">التفاصيل</a>
+                            <span class="text-[color:var(--brand)] font-bold">1 - 3</span>
+                        </div>
+                    </article>
+
+                    <article class="p-5 bg-white rounded-2xl card">
+                        <h4 class="font-semibold">المرحلة الأساسية والثانوية</h4>
+                        <p class="mt-2 text-sm text-gray-600">برامج متقدمة وإعداد للمرحلة الجامعية.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <a class="text-sm font-semibold" href="#">التفاصيل</a>
+                            <span class="text-[color:var(--brand)] font-bold">4 - 12</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions -->
+        <section id="admissions" class="py-10 bg-gradient-to-l from-white to-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="rounded-2xl p-6 card bg-white">
+                    <div class="md:flex items-center gap-6">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-[color:var(--brand)]">القبول والتسجيل</h3>
+                            <p class="mt-2 text-gray-600">اطّلع على دليل التسجيل والمستندات المطلوبة، واحجز مكانك مبكرًا
+                            </p>
+                            <div class="mt-4 flex gap-3">
+                                <a href="#" class="px-4 py-2 rounded-lg border font-semibold">دليل التسجيل</a>
+                                <a href="#" class="px-4 py-2 rounded-lg"
+                                    style="background:var(--accent);color:white">تقديم طلب</a>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-56 mt-4 md:mt-0">
+                            <img src="/assets/student.webp" alt="admissions"
+                                class="rounded-xl object-cover w-full h-36" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media / News -->
+        <section id="media" class="py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-xl font-bold text-[color:var(--brand)]">الأخبار والأنشطة</h3>
+                    <a href="#" class="text-sm text-gray-500">المزيد</a>
+                </div>
+
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <article class="rounded-2xl overflow-hidden card">
+                        <img src="/assets/download (1).jpeg" alt="news" class="w-full h-40 object-cover" />
+                        <div class="p-4">
+                            <div class="text-sm text-gray-500">15 سبتمبر 2025</div>
+                            <h4 class="mt-2 font-semibold">حفل تكريم المتفوقين</h4>
+                            <p class="mt-2 text-sm text-gray-600">احتفلنا بتكريم الطلبة المتميزين في حضور أولياء الأمور
+                                والأساتذة.</p>
+                        </div>
+                    </article>
+
+                    <article class="rounded-2xl overflow-hidden card">
+                        <img src="/assets/download.jpeg" alt="news" class="w-full h-40 object-cover" />
+                        <div class="p-4">
+                            <div class="text-sm text-gray-500">3 اغسطس 2025</div>
+                            <h4 class="mt-2 font-semibold">ورشة تعليمية للمعلمين</h4>
+                            <p class="mt-2 text-sm text-gray-600">تطوير مهارات التربية الحديثة وتقنيات التدريس.</p>
+                        </div>
+                    </article>
+
+                    <article class="rounded-2xl overflow-hidden card">
+                        <img src="/assets/student.webp" alt="news" class="w-full h-40 object-cover" />
+                        <div class="p-4">
+                            <div class="text-sm text-gray-500">20 يوليو 2025</div>
+                            <h4 class="mt-2 font-semibold">اليوم الرياضي المدرسي</h4>
+                            <p class="mt-2 text-sm text-gray-600">نشاطات رياضية ومنافسات بين الفرق داخل المدرسة.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-12 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-xl font-bold text-[color:var(--brand)]">تواصل معنا</h3>
+                        <p class="mt-2 text-gray-600">للاستفسارات، التسجيل أو الزيارات المدرسية، تواصل معنا على الأرقام
+                            أو املأ النموذج.</p>
+
+                        <div class="mt-6 space-y-3 text-sm">
+                            <div class="flex items-start gap-3"><strong>📍</strong>
+                                <div>عمان - الأردن</div>
+                            </div>
+                            <div class="flex items-start gap-3"><strong>📞</strong>
+                                <div>+962 7X XXX XXXX</div>
+                            </div>
+                            <div class="flex items-start gap-3"><strong>✉️</strong>
+                                <div>info@al-mozon.edu.jo</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <iframe class="w-full h-56 rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18"
+                                aria-hidden="false"></iframe>
+                        </div>
+                    </div>
+
+                    <form class="bg-white p-6 rounded-2xl card">
+                        <h4 class="font-semibold">أرسل رسالة</h4>
+                        <div class="mt-4 grid grid-cols-1 gap-3">
+                            <input type="text" placeholder="الاسم" class="border rounded-lg p-3" />
+                            <input type="email" placeholder="البريد الإلكتروني" class="border rounded-lg p-3" />
+                            <input type="text" placeholder="الهاتف" class="border rounded-lg p-3" />
+                            <textarea placeholder="رسالتك" class="border rounded-lg p-3 h-28"></textarea>
+                            <div class="flex justify-end">
+                                <button
+                                    class="px-4 py-2 rounded-lg bg-[color:var(--brand)] text-white font-semibold">إرسال</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1E657B] text-white py-10 mt-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <!-- Logo and Intro -->
+            <div>
+                <a href="index.html" class="flex items-center space-x-2 space-x-reverse mb-4">
+                    <img src="/assets/logo.png" alt="شعار مدرسة المزن" class="h-[70px] w-[140px] object-cover" />
+                </a>
+                <p class="text-sm leading-relaxed">
+                    روضة ومدارس المزن التربوية - نُعدّ الأجيال لمستقبل أفضل بالقيم والمعرفة.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">روابط سريعة</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-[#D39D2E]">الرئيسية</a></li>
+                    <li><a href="about.html" class="hover:text-[#D39D2E]">عن المدرسة</a></li>
+                    <li><a href="programs.html" class="hover:text-[#D39D2E]">الأقسام الأكاديمية</a></li>
+                    <li><a href="admissions.html" class="hover:text-[#D39D2E]">القبول والتسجيل</a></li>
+                    <li><a href="news.html" class="hover:text-[#D39D2E]">الأخبار</a></li>
+                    <li><a href="careers.html" class="hover:text-[#D39D2E]">الوظائف</a></li>
+                    <li><a href="contact.html" class="hover:text-[#D39D2E]">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <!-- Academics -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">الأقسام الأكاديمية</h3>
+                <ul class="space-y-2">
+                    <li><a href="programs.html#kg" class="hover:text-[#D39D2E]">رياض الأطفال</a></li>
+                    <li><a href="programs.html#primary" class="hover:text-[#D39D2E]">المرحلة الابتدائية</a></li>
+                    <li><a href="programs.html#middle" class="hover:text-[#D39D2E]">المرحلة الإعدادية</a></li>
+                    <li><a href="programs.html#secondary" class="hover:text-[#D39D2E]">المرحلة الثانوية</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">تواصل معنا</h3>
+                <p>📍 عمان، الأردن</p>
+                <p>☎ +962 6 123 4567</p>
+                <p>✉ info@almozon.edu.jo</p>
+                <div class="flex space-x-4 space-x-reverse mt-4">
+                    <a href="#" class="hover:text-[#D39D2E]">فيسبوك</a>
+                    <a href="#" class="hover:text-[#D39D2E]">انستجرام</a>
+                    <a href="#" class="hover:text-[#D39D2E]">لينكدإن</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8 border-t border-white/20 pt-4">
+            © 2025 جميع الحقوق محفوظة - مدارس المزن التربوية
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        if (menuBtn) {
+            menuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+        }
+    </script>
+
+    <script>
+
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', (e) => {
+                const href = a.getAttribute('href');
+                if (href.length > 1) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    if (!mobileNav.classList.contains('hidden')) mobileNav.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

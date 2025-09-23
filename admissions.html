@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>التسجيل والقبول - مدارس المزن</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+  <!-- NAVBAR -->
+    <header class="bg-[#1E657B] text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2 space-x-reverse">
+                <img src="/assets/logo.png" alt="شعار مدرسة المزن" class="h-[70px] w-[140px] object-cover" />
+            </a>
+            <nav class="hidden md:flex space-x-6 space-x-reverse text-lg font-medium">
+                <a href="index.html" class="hover:text-[#D39D2E]">الرئيسية</a>
+                <a href="about.html" class="hover:text-[#D39D2E]">عن المدرسة</a>
+                <a href="programs.html" class="hover:text-[#D39D2E]">الأقسام الأكاديمية</a>
+                <a href="admissions.html" class="hover:text-[#D39D2E]">القبول والتسجيل</a>
+                <a href="news.html" class="hover:text-[#D39D2E]">الأخبار</a>
+                <a href="contact.html" class="hover:text-[#D39D2E]">تواصل معنا</a>
+                <a href="careers.html" class="hover:text-[#D39D2E]">الوظائف</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-[#1E657B] text-white mt-4 space-y-2 p-4 rounded-xl">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن المدرسة</a>
+            <a href="programs.html">الأقسام الأكاديمية</a>
+            <a href="admissions.html">القبول والتسجيل</a>
+            <a href="news.html">الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+            <a href="careers.html">الوظائف</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-[45vh]" style="background-image: url('/assets/banner.jpeg');">
+      <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white">التسجيل والقبول</h1>
+      </div>
+    </section>
+
+    <!-- شروط القبول -->
+    <section class="max-w-6xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold text-[#1E657B] mb-8 text-center">شروط القبول</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-4">رياض الأطفال</h3>
+          <ul class="list-disc pr-5 text-gray-700 space-y-2">
+            <li>إتمام 4 سنوات قبل بداية العام الدراسي.</li>
+            <li>إجراء مقابلة مع ولي الأمر.</li>
+          </ul>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-4">المرحلة الابتدائية</h3>
+          <ul class="list-disc pr-5 text-gray-700 space-y-2">
+            <li>شهادة إتمام الروضة.</li>
+            <li>مقابلة شخصية للطالب.</li>
+          </ul>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-4">المرحلة الثانوية</h3>
+          <ul class="list-disc pr-5 text-gray-700 space-y-2">
+            <li>كشف علامات آخر 3 سنوات دراسية.</li>
+            <li>اجتياز اختبار القبول التحصيلي.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- المستندات المطلوبة -->
+    <section class="bg-white py-16 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-[#1E657B] mb-8 text-center">المستندات المطلوبة</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <ul class="list-disc pr-6 text-gray-700 space-y-2">
+            <li>نسخة من شهادة الميلاد.</li>
+            <li>نسخة من هوية ولي الأمر.</li>
+            <li>4 صور شخصية حديثة للطالب.</li>
+          </ul>
+          <ul class="list-disc pr-6 text-gray-700 space-y-2">
+            <li>شهادة التطعيمات.</li>
+            <li>شهادات مدرسية سابقة (إن وجدت).</li>
+            <li>تقرير طبي حديث.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- خطوات التقديم -->
+    <section class="max-w-6xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold text-[#1E657B] mb-12 text-center">خطوات التقديم</h2>
+      <div class="relative border-r-4 border-[#D39D2E] max-w-2xl mx-auto">
+        <div class="mb-10 ml-6">
+          <div class="absolute w-6 h-6 bg-[#D39D2E] rounded-full -right-3"></div>
+          <h3 class="font-semibold text-xl mb-2 mr-10">الخطوة الأولى</h3>
+          <p class="text-gray-700 mr-10">تعبئة نموذج التسجيل الإلكتروني.</p>
+        </div>
+        <div class="mb-10 ml-6">
+          <div class="absolute w-6 h-6 bg-[#D39D2E] rounded-full -right-3"></div>
+          <h3 class="font-semibold text-xl mb-2 mr-10">الخطوة الثانية</h3>
+          <p class="text-gray-700 mr-10">تسليم المستندات المطلوبة لمكتب القبول.</p>
+        </div>
+        <div class="mb-10 ml-6">
+          <div class="absolute w-6 h-6 bg-[#D39D2E] rounded-full -right-3"></div>
+          <h3 class="font-semibold text-xl mb-2 mr-10">الخطوة الثالثة</h3>
+          <p class="text-gray-700 mr-10">إجراء مقابلة أو اختبار القبول.</p>
+        </div>
+        <div class="ml-6">
+          <div class="absolute w-6 h-6 bg-[#D39D2E] rounded-full -right-3"></div>
+          <h3 class="font-semibold text-xl mb-2 mr-10">الخطوة الرابعة</h3>
+          <p class="text-gray-700 mr-10">استلام إشعار القبول وإتمام التسجيل النهائي.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- نموذج التقديم السريع -->
+    <section class="bg-gray-100 py-16 px-6">
+      <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+        <h2 class="text-3xl font-bold text-[#1E657B] mb-8 text-center">نموذج تقديم سريع</h2>
+        <form class="grid md:grid-cols-2 gap-6">
+          <input type="text" placeholder="اسم الطالب" class="border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#1E657B]" />
+          <input type="text" placeholder="اسم ولي الأمر" class="border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#1E657B]" />
+          <input type="tel" placeholder="رقم الهاتف" class="border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#1E657B]" />
+          <input type="email" placeholder="البريد الإلكتروني" class="border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#1E657B]" />
+          <select class="border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#1E657B] md:col-span-2">
+            <option>اختر المرحلة الدراسية</option>
+            <option>رياض الأطفال</option>
+            <option>الابتدائية</option>
+            <option>الإعدادية</option>
+            <option>الثانوية</option>
+          </select>
+          <textarea placeholder="ملاحظات" rows="4" class="border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#1E657B] md:col-span-2"></textarea>
+          <button type="submit" class="bg-[#1E657B] hover:bg-[#14505F] text-white px-6 py-3 rounded-xl font-semibold md:col-span-2 transition">إرسال الطلب</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-6xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold text-[#1E657B] mb-8 text-center">الأسئلة الشائعة</h2>
+      <div class="space-y-6 max-w-3xl mx-auto">
+        <details class="bg-white p-6 rounded-xl shadow-md">
+          <summary class="font-semibold cursor-pointer">هل يمكن التسجيل إلكترونياً؟</summary>
+          <p class="mt-3 text-gray-700">نعم، يمكن التسجيل عبر الموقع الإلكتروني أو من خلال زيارة مكتب القبول.</p>
+        </details>
+        <details class="bg-white p-6 rounded-xl shadow-md">
+          <summary class="font-semibold cursor-pointer">هل هناك خصومات للأشقاء؟</summary>
+          <p class="mt-3 text-gray-700">نعم، تقدم المدرسة خصومات خاصة للأشقاء الملتحقين.</p>
+        </details>
+        <details class="bg-white p-6 rounded-xl shadow-md">
+          <summary class="font-semibold cursor-pointer">متى يبدأ التسجيل للعام الجديد؟</summary>
+          <p class="mt-3 text-gray-700">عادةً يبدأ التسجيل في شهر مارس من كل عام.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-[#1E657B] text-white py-16 px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">سجّل ابنك اليوم في مدارس المزن</h2>
+      <p class="mb-6">امنح طفلك بيئة تعليمية متميزة تجمع بين القيم والمعرفة.</p>
+      <a href="#form" class="bg-[#D39D2E] hover:bg-[#B38324] px-8 py-3 rounded-xl text-white font-semibold transition">قدّم الآن</a>
+    </section>
+
+   <!-- FOOTER -->
+    <footer class="bg-[#1E657B] text-white py-10 mt-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <!-- Logo and Intro -->
+            <div>
+                <a href="index.html" class="flex items-center space-x-2 space-x-reverse mb-4">
+                    <img src="/assets/logo.png" alt="شعار مدرسة المزن" class="h-[70px] w-[140px] object-cover" />
+                </a>
+                <p class="text-sm leading-relaxed">
+                    روضة ومدارس المزن التربوية - نُعدّ الأجيال لمستقبل أفضل بالقيم والمعرفة.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">روابط سريعة</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-[#D39D2E]">الرئيسية</a></li>
+                    <li><a href="about.html" class="hover:text-[#D39D2E]">عن المدرسة</a></li>
+                    <li><a href="programs.html" class="hover:text-[#D39D2E]">الأقسام الأكاديمية</a></li>
+                    <li><a href="admissions.html" class="hover:text-[#D39D2E]">القبول والتسجيل</a></li>
+                    <li><a href="news.html" class="hover:text-[#D39D2E]">الأخبار</a></li>
+                    <li><a href="careers.html" class="hover:text-[#D39D2E]">الوظائف</a></li>
+                    <li><a href="contact.html" class="hover:text-[#D39D2E]">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <!-- Academics -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">الأقسام الأكاديمية</h3>
+                <ul class="space-y-2">
+                    <li><a href="programs.html#kg" class="hover:text-[#D39D2E]">رياض الأطفال</a></li>
+                    <li><a href="programs.html#primary" class="hover:text-[#D39D2E]">المرحلة الابتدائية</a></li>
+                    <li><a href="programs.html#middle" class="hover:text-[#D39D2E]">المرحلة الإعدادية</a></li>
+                    <li><a href="programs.html#secondary" class="hover:text-[#D39D2E]">المرحلة الثانوية</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">تواصل معنا</h3>
+                <p>📍 عمان، الأردن</p>
+                <p>☎ +962 6 123 4567</p>
+                <p>✉ info@almozon.edu.jo</p>
+                <div class="flex space-x-4 space-x-reverse mt-4">
+                    <a href="#" class="hover:text-[#D39D2E]">فيسبوك</a>
+                    <a href="#" class="hover:text-[#D39D2E]">انستجرام</a>
+                    <a href="#" class="hover:text-[#D39D2E]">لينكدإن</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8 border-t border-white/20 pt-4">
+            © 2025 جميع الحقوق محفوظة - مدارس المزن التربوية
+        </div>
+    </footer>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      if(menuBtn){
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>
