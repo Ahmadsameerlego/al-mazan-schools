@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>معرض الوسائط - مدارس المزن</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1E657B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+      <header class="bg-[#1E657B] text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2 space-x-reverse">
+                <img src="/assets/logo.png" alt="شعار مدرسة المزن" class="h-[70px] w-[140px] object-cover" />
+            </a>
+            <nav class="hidden md:flex space-x-6 space-x-reverse text-lg font-medium">
+                <a href="index.html" class="hover:text-[#D39D2E]">الرئيسية</a>
+                <a href="about.html" class="hover:text-[#D39D2E]">عن المدرسة</a>
+                <a href="programs.html" class="hover:text-[#D39D2E]">الأقسام الأكاديمية</a>
+                <a href="admissions.html" class="hover:text-[#D39D2E]">القبول والتسجيل</a>
+                <a href="news.html" class="hover:text-[#D39D2E]">الأخبار</a>
+                <a href="contact.html" class="hover:text-[#D39D2E]">تواصل معنا</a>
+                <a href="careers.html" class="hover:text-[#D39D2E]">الوظائف</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden flex-col bg-[#1E657B] text-white mt-4 space-y-2 p-4 rounded-xl">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن المدرسة</a>
+            <a href="programs.html">الأقسام الأكاديمية</a>
+            <a href="admissions.html">القبول والتسجيل</a>
+            <a href="news.html">الأخبار</a>
+            <a href="contact.html">تواصل معنا</a>
+            <a href="careers.html">الوظائف</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+     <section class="relative bg-cover bg-center h-[45vh]" style="background-image: url('/assets/banner.jpeg');">
+      <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-white">معرض الوسائط</h1>
+      </div>
+    </section>
+
+
+    <!-- Tabs -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <!-- Tab Buttons -->
+        <div class="flex justify-center space-x-4 space-x-reverse mb-10">
+          <button id="photosTab" class="px-6 py-2 rounded-lg bg-primary text-white font-semibold">📷 الصور</button>
+          <button id="videosTab" class="px-6 py-2 rounded-lg bg-gray-200 text-gray-700 font-semibold hover:bg-gray-300 transition">🎥 الفيديوهات</button>
+        </div>
+
+        <!-- Photos Grid -->
+        <div id="photosSection" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="overflow-hidden rounded-xl shadow">
+            <img src="assets/download (1).jpeg" class="w-full h-48 object-cover hover:scale-110 transition duration-500" alt="صورة 1">
+          </div>
+          <div class="overflow-hidden rounded-xl shadow">
+            <img src="assets/download.jpeg" class="w-full h-48 object-cover hover:scale-110 transition duration-500" alt="صورة 2">
+          </div>
+          <div class="overflow-hidden rounded-xl shadow">
+            <img src="assets/student.webp" class="w-full h-48 object-cover hover:scale-110 transition duration-500" alt="صورة 3">
+          </div>
+          <div class="overflow-hidden rounded-xl shadow">
+            <img src="assets/banner.jpeg" class="w-full h-48 object-cover hover:scale-110 transition duration-500" alt="صورة 4">
+          </div>
+        </div>
+
+        <!-- Videos Grid -->
+        <div id="videosSection" class="hidden grid md:grid-cols-2 gap-8">
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <iframe class="w-full h-64" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <iframe class="w-full h-64" src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-primary mb-6">تابعونا على شبكات التواصل</h2>
+        <p class="mb-8 text-gray-600">لمزيد من الصور والفيديوهات، تابعوا صفحاتنا الرسمية.</p>
+        <a href="#" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">زيارة فيسبوك</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="bg-[#1E657B] text-white py-10 mt-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <!-- Logo and Intro -->
+            <div>
+                <a href="index.html" class="flex items-center space-x-2 space-x-reverse mb-4">
+                    <img src="/assets/logo.png" alt="شعار مدرسة المزن" class="h-[70px] w-[140px] object-cover" />
+                </a>
+                <p class="text-sm leading-relaxed">
+                    روضة ومدارس المزن التربوية - نُعدّ الأجيال لمستقبل أفضل بالقيم والمعرفة.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">روابط سريعة</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-[#D39D2E]">الرئيسية</a></li>
+                    <li><a href="about.html" class="hover:text-[#D39D2E]">عن المدرسة</a></li>
+                    <li><a href="programs.html" class="hover:text-[#D39D2E]">الأقسام الأكاديمية</a></li>
+                    <li><a href="admissions.html" class="hover:text-[#D39D2E]">القبول والتسجيل</a></li>
+                    <li><a href="news.html" class="hover:text-[#D39D2E]">الأخبار</a></li>
+                    <li><a href="careers.html" class="hover:text-[#D39D2E]">الوظائف</a></li>
+                    <li><a href="contact.html" class="hover:text-[#D39D2E]">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <!-- Academics -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">الأقسام الأكاديمية</h3>
+                <ul class="space-y-2">
+                    <li><a href="programs.html#kg" class="hover:text-[#D39D2E]">رياض الأطفال</a></li>
+                    <li><a href="programs.html#primary" class="hover:text-[#D39D2E]">المرحلة الابتدائية</a></li>
+                    <li><a href="programs.html#middle" class="hover:text-[#D39D2E]">المرحلة الإعدادية</a></li>
+                    <li><a href="programs.html#secondary" class="hover:text-[#D39D2E]">المرحلة الثانوية</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">تواصل معنا</h3>
+                <p>📍 عمان، الأردن</p>
+                <p>☎ +962 6 123 4567</p>
+                <p>✉ info@almozon.edu.jo</p>
+                <div class="flex space-x-4 space-x-reverse mt-4">
+                    <a href="#" class="hover:text-[#D39D2E]">فيسبوك</a>
+                    <a href="#" class="hover:text-[#D39D2E]">انستجرام</a>
+                    <a href="#" class="hover:text-[#D39D2E]">لينكدإن</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8 border-t border-white/20 pt-4">
+            © 2025 جميع الحقوق محفوظة - مدارس المزن التربوية
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        if (menuBtn) {
+            menuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+        }
+    </script>
+
+    <!-- Tabs Script -->
+    <script>
+      const photosTab = document.getElementById("photosTab");
+      const videosTab = document.getElementById("videosTab");
+      const photosSection = document.getElementById("photosSection");
+      const videosSection = document.getElementById("videosSection");
+
+      photosTab.addEventListener("click", () => {
+        photosTab.classList.add("bg-primary", "text-white");
+        photosTab.classList.remove("bg-gray-200", "text-gray-700");
+        videosTab.classList.remove("bg-primary", "text-white");
+        videosTab.classList.add("bg-gray-200", "text-gray-700");
+        photosSection.classList.remove("hidden");
+        videosSection.classList.add("hidden");
+      });
+
+      videosTab.addEventListener("click", () => {
+        videosTab.classList.add("bg-primary", "text-white");
+        videosTab.classList.remove("bg-gray-200", "text-gray-700");
+        photosTab.classList.remove("bg-primary", "text-white");
+        photosTab.classList.add("bg-gray-200", "text-gray-700");
+        videosSection.classList.remove("hidden");
+        photosSection.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
